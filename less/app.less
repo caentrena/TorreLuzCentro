@@ -1,9 +1,308 @@
-.header-prueba{
+/* css reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block; } body {line-height: 1; } ol, ul {list-style: none; } blockquote, q {quotes: none; } blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none; } table {border-collapse: collapse; border-spacing: 0; }
+
+/*  Elementos generales  */
+.no-select{
+	-webkit-touch-callout: none;
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none;
+}
+
+.page-content{
+	position: relative;
+	width: 94%;
+	margin-right: 3%;
+	margin-left: 3%;
+}
+
+/*  Header  */
+
+header{
 	position: relative;
 	width: 100%;
-	padding: 50px 0;
-	p{
+	.header-wrapper{
 		position: relative;
-		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 30px;
+		padding-bottom: 10px;
+		margin-right: 3%;
+		margin-left: 3%;
+		width: 94%;
+		overflow: hidden;
+		border-bottom: 1px solid #7e9ab8;
+		.logo-container{
+			position: relative;
+			width: 240px;
+			height: 60px;
+			margin-right: 50px;
+			float: left;
+			cursor: pointer;
+			img{
+				position: relative;
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.links-container{
+			position: relative;
+			margin-top: 30px;
+			margin-right: 50px;
+			height: 30px;
+			box-sizing: border-box;
+			float: left;
+			ul{
+				position: relative;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				-moz-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				-o-transform: translateY(-50%);
+				transform: translateY(-50%);		
+				overflow: hidden;
+				li{
+					float: left;
+					text-decoration: none;
+					a{
+						text-decoration: none;
+						color: #7e9ab8;
+						padding: 0 10px;
+					}
+					a:hover{
+						color: #193145;
+					}
+				}
+				li:last-child{
+					margin-left: 30px;
+				}
+			}
+		}
+		.booking-container{
+			position: relative;
+			height: 30px;
+			margin-top: 30px;
+			float: right;
+			.booking-phrase{
+				position: relative;
+				margin-right: 20px;
+				font-size: 1rem;
+				color: #7e9ab8;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				-moz-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				-o-transform: translateY(-50%);
+				transform: translateY(-50%);
+				float: left;
+			}
+			.date-input{
+				position: relative;
+				width: 110px;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				-moz-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				-o-transform: translateY(-50%);
+				transform: translateY(-50%);
+				height: 20px;
+				border: 1px solid #7e9ab8;
+				box-sizing: border-box;
+				float: left;
+			}
+			.date-input::-webkit-inner-spin-button{
+				display: none;
+			}
+			.date-input::-webkit-datetime-edit-month-field,
+			.date-input::-webkit-datetime-edit-day-field,
+			.date-input::-webkit-datetime-edit-year-field{
+				color: #7e9ab8;
+			}
+			.date-input::-webkit-calendar-picker-indicator { 
+				color: #7e9ab8;
+			}
+			.calendar-icon{
+				position: relative;
+				width: 30px;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				-moz-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				-o-transform: translateY(-50%);
+				transform: translateY(-50%);
+				height: 20px;
+				float: left;
+				cursor: pointer;
+				svg{
+					position: relative;
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.booking-button{
+				position: relative;
+				width: 80px;
+				height: 20px;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				-moz-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				-o-transform: translateY(-50%);
+				transform: translateY(-50%);
+				border: 1px solid #7e9ab8;
+				box-sizing: border-box;
+				float: left;
+				cursor: pointer;
+				p{
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					-webkit-transform: translateY(-50%) translateX(-50%);
+					-moz-transform: translateY(-50%) translateX(-50%);
+					-ms-transform: translateY(-50%) translateX(-50%);
+					-o-transform: translateY(-50%) translateX(-50%);
+					transform: translateY(-50%) translateX(-50%);
+					font-size: 1rem;
+					color: #7e9ab8;
+				}
+			}
+			.booking-button:hover{
+				border: 1px solid #193145;
+			}
+		}
+		.lenguage-container{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			padding: 5px;
+			border: 1px solid #7e9ab8;
+			cursor: pointer;
+			p{
+				color: #193145;
+				font-size: 0.8rem;
+			}
+		}
+	}
+}
+
+/******Páginas******/
+/*  Página Indice  */
+.index-page{
+	min-height: 40vh;
+}
+/*  Footer   */
+
+footer{
+	position: relative;
+	width: 94%;
+	margin-right: 3%;
+	margin-left: 3%;
+	border-top: 1px solid #7e9ab8;
+	.footer-wrapper{
+		position: relative;
+		margin-top: 15px;
+		margin-bottom: 30px;
+		width: 100%;
+		overflow: hidden;
+		.contact-container{
+			position: relative;
+			width: 20%;
+			margin-right: 3%;
+			float: left;
+			.title{
+				position: relative;
+				text-transform: uppercase;
+				font-size: 1.1rem;
+				margin-bottom: 15px;
+				color: #193145;
+			}
+			.address, .telephone, .email{
+				position: relative;
+				font-size: 1rem;
+				color: #476484;
+				line-height: 1.5rem;
+				span:hover{
+					color: #193145;
+				}
+			}
+			.address, .email span{
+				cursor: pointer;
+			}
+			.address:hover{
+				color: #193145;
+			}
+			.email span:hover{
+				color: #193145;
+			}
+		}
+		.time-container{
+			position: relative;
+			width: 20%;
+			float: left;
+			.title{
+				position: relative;
+				text-transform: uppercase;
+				font-size: 1.1rem;
+				color: #193145;
+				margin-bottom: 15px;
+			}
+			.time, .hour{
+				overflow: hidden;
+				margin-bottom: 10px;
+				p{
+					font-size: 1rem;
+					color: #476484;
+					float: left;
+					margin-top: 7px;
+					margin-left: 10px;
+				}
+				svg{
+					position: relative;
+					width: 30px;
+					height: 30px;
+					float: left;
+				}
+			}
+			.hour{
+				margin-bottom: 0px;
+				svg{
+					width: 28px;
+					height: 28px;
+				}
+			}
+		}
+		.social-copyright-container{
+			position: absolute;
+			bottom: 0px;
+			right: 0px;
+			width: 300px;
+			overflow: hidden;
+			.social{
+				position: relative;
+				float: right;
+				margin-bottom: 15px;
+				svg{
+					position: relative;
+					float: left;
+					width: 25px;
+					height: 25px;
+					margin-right: 15px;
+				}
+				svg:last-child{
+					margin-right: 0px;
+				}
+			}
+			.copyright{
+				position: relative;
+				float: right;
+				p{
+					position: relative;
+					font-size: 0.8rem;
+					color: #476484;
+				}
+			}
+
+		}
 	}
 }
