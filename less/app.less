@@ -13,26 +13,36 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .page-content{
 	position: relative;
-	width: 94%;
-	margin-right: 3%;
-	margin-left: 3%;
+	width: 100%;
 }
 
-/*  Header  */
+.big-width{
+	width: 100%;
+}
 
+.medium-width{
+	width: 96%;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+
+.small-width{
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+
+/*  Header  */
 header{
 	position: relative;
 	width: 100%;
+	border-bottom: 3px solid #7e9ab8;
 	.header-wrapper{
 		position: relative;
 		margin-top: 20px;
-		margin-bottom: 30px;
 		padding-bottom: 10px;
-		margin-right: 3%;
-		margin-left: 3%;
-		width: 94%;
 		overflow: hidden;
-		border-bottom: 1px solid #7e9ab8;
 		.logo-container{
 			position: relative;
 			width: 240px;
@@ -186,24 +196,164 @@ header{
 	}
 }
 
+
 /******Páginas******/
 /*  Página Indice  */
 .index-page{
-	min-height: 40vh;
+	.slider{
+		position: relative;
+		width: 100%;
+		height: 35vw;
+		.slider-container{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			.slide{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+			.active{
+				opacity: 1;
+			}
+		}
+		.slider-controller{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			.prev-button, .next-button{
+				position: absolute;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				-moz-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				-o-transform: translateY(-50%);
+				transform: translateY(-50%);
+				width: 30px;
+				height: 30px;
+				cursor: pointer;
+				svg{
+					position: relative;
+					width: 100%;
+					height: 100%;
+					fill: #7e9ab8;
+				}
+				svg:hover{
+					/*fill: #193145;*/
+					fill: white;
+				}
+			}
+			.prev-button{
+				left: 5%;
+			}
+			.next-button{
+				right: 5%;
+			}
+		}
+		.slider-content{
+			position: absolute;
+			bottom: 10%;
+			left: 5%;
+			width: 60%;
+			p{
+				position: relative;
+				font-size: 3.5rem;
+				color: white;
+			}
+		}
+	}
+	.last-offers{
+		position: relative;
+		padding: 5% 0;
+		.title{
+			position: relative;
+			font-size: 2rem;
+			color: #193145;
+			margin-bottom: 30px;
+		}
+		.offer-cards-container{
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+			.offer-card-container{
+				position: relative;
+				float: left;
+				width: 48%;
+				margin-right: 4%;
+				.photo-container{
+					position: relative;
+					width: 100%;
+					height: 250px;
+					background-position: center;
+					background-size: cover;
+					background-repeat: no-repeat;
+					.discount{
+						position: absolute;
+						top: 0px;
+						right: 0px;
+						padding: 5px;
+						border-left: 1px solid #193145;
+						border-bottom: 1px solid #193145;
+						p{
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							-webkit-transform: translateY(-50%) translateX(-50%);
+							-moz-transform: translateY(-50%) translateX(-50%);
+							-ms-transform: translateY(-50%) translateX(-50%);
+							-o-transform: translateY(-50%) translateX(-50%);
+							transform: translateY(-50%) translateX(-50%);
+						}
+					}
+				}
+				.title{
+					position: relative;
+					font-size: 1.5rem;
+					color: #193145;
+					margin: 15px 0;
+					padding-right: 5%;
+				}
+				.description{
+					position: relative;
+					font-size: 1.2rem;
+					color: #193145;
+					margin-bottom: 15px;
+					padding-right: 5%;
+				}
+				.price-button{
+					position: relative;
+					padding: 5px;
+					width: 70px;
+					cursor: pointer;
+					border: 1px solid #193145;
+					p{
+						position: relative;
+						font-size: 1rem;
+						color: #193145;
+					}
+				}
+			}
+			.offer-card-container:nth-child(2n){
+				margin-right: 0px;
+			}
+		}
+	}
 }
-/*  Footer   */
 
+
+/*  Footer   */
 footer{
 	position: relative;
-	width: 94%;
-	margin-right: 3%;
-	margin-left: 3%;
-	border-top: 1px solid #7e9ab8;
+	width: 100%;
+	border-top: 3px solid #7e9ab8;
 	.footer-wrapper{
 		position: relative;
 		margin-top: 15px;
-		margin-bottom: 30px;
-		width: 100%;
+		margin-bottom: 20px;
 		overflow: hidden;
 		.contact-container{
 			position: relative;
@@ -288,6 +438,7 @@ footer{
 					width: 25px;
 					height: 25px;
 					margin-right: 15px;
+					cursor: pointer;
 				}
 				svg:last-child{
 					margin-right: 0px;

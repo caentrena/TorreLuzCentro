@@ -6,7 +6,7 @@
     </head>
     <body>
     <header>
-    	<div class="header-wrapper">
+    	<div class="header-wrapper medium-width">
     		<div class="logo-container">
     			<img src="assets/image/logo.png">
     		</div>
