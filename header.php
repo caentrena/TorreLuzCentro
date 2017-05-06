@@ -14,7 +14,7 @@
     			<ul>
     				<li><a class= "no-select" href="">Habitaciones</a></li>
     				<li><a class= "no-select" href="">Servicios</a></li>
-    				<li><a class= "no-select" href="">Sobre nosotros</a></li>
+    				<li><a class= "no-select" href="aboutus.php">Sobre nosotros</a></li>
     				<li><a class= "no-select" href="">F.A.Q.</a></li>
     			</ul>
     		</div>
