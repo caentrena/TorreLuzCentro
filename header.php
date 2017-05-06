@@ -7,15 +7,15 @@
     <body>
     <header>
     	<div class="header-wrapper medium-width">
-    		<div class="logo-container">
+    		<a href="index.php"><div class="logo-container">
     			<img src="assets/image/logo.png">
-    		</div>
+    		</div></a>
     		<div class="links-container">
     			<ul>
     				<li><a class= "no-select" href="">Habitaciones</a></li>
     				<li><a class= "no-select" href="">Servicios</a></li>
     				<li><a class= "no-select" href="aboutus.php">Sobre nosotros</a></li>
-    				<li><a class= "no-select" href="">F.A.Q.</a></li>
+    				<li><a class= "no-select" href="faq.php">F.A.Q.</a></li>
     			</ul>
     		</div>
     		<div class="booking-container">

@@ -1,6 +1,6 @@
 <?php include 'header.php';?>
 
-    <section class="index-page page-content">
+    <section class="index-page page-content no-margin-top">
         <div class="slider">
             <div class="slider-container">
                 <div class="slide" style="background-image: url('assets/image/foto-slider1.jpg');"></div>

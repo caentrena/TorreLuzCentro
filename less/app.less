@@ -14,8 +14,24 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .page-content{
 	position: relative;
 	width: 100%;
+	margin: 5% 0;
+}
+.no-margin-top{
+	margin-top: 0px;
+}
+.title-page{
+	position: relative;
+	margin-bottom: 3%;
+	p{
+		text-align: center;
+		font-size: 2.5rem;
+		line-height: 3rem;
+		color: #193145; 
+	}
+
 }
 
+/* Tamaños del ancho */
 .big-width{
 	width: 100%;
 }
@@ -44,17 +60,21 @@ header{
 		margin-top: 20px;
 		padding-bottom: 10px;
 		overflow: hidden;
-		.logo-container{
+		a{
 			position: relative;
-			width: 240px;
-			height: 60px;
-			margin-right: 50px;
-			float: left;
-			cursor: pointer;
-			img{
+			text-decoration: none;
+			.logo-container{
 				position: relative;
-				width: 100%;
-				height: 100%;
+				width: 240px;
+				height: 60px;
+				margin-right: 50px;
+				float: left;
+				cursor: pointer;
+				img{
+					position: relative;
+					width: 100%;
+					height: 100%;
+				}
 			}
 		}
 		.links-container{
@@ -78,6 +98,7 @@ header{
 					text-decoration: none;
 					a{
 						text-decoration: none;
+						cursor: pointer;
 						color: #7e9ab8;
 						padding: 0 10px;
 					}
@@ -271,7 +292,7 @@ header{
 	}
 	.last-offers{
 		position: relative;
-		padding: 5% 0;
+		padding-top: 5%;
 		.title{
 			position: relative;
 			font-size: 2rem;
@@ -378,7 +399,7 @@ header{
 	}
 	.direction-container{
 		position: relative;
-		margin-bottom: 5%;
+		/*margin-bottom: 5%;*/
 		.title{
 			position: relative;
 			margin-bottom: 30px;
@@ -425,6 +446,103 @@ header{
 					color: #193145;
 				}
 			}
+		}
+	}
+}
+
+/* F.A.Q. page */
+.faq-page{
+	.searcher{
+		position: relative;
+		width: 30%;
+		height: 25px;
+		margin: 0 auto;
+		margin-bottom: 4%;
+		overflow: hidden;
+		.searcher-input{
+			position: relative;
+			width: 80%;
+			float: left;
+			height: 100%;
+			margin-right: 3%;
+			border: 1px solid #193145;
+			padding: 5px 30px;
+			color: #193145;
+		}
+		.searcher-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		    color: #9cb8d5;
+		}
+		::-moz-placeholder { /* Firefox 19+ */
+		    color: #9cb8d5;
+		}
+		:-ms-input-placeholder { /* IE 10+ */
+		    color: #9cb8d5;
+		}
+		.searcher-button{
+			position: relative;
+			float: left;
+			width: 15%;
+			cursor: pointer;
+			height: 100%;
+			border: 1px solid #193145;
+			box-sizing: border-box;
+			p{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				-webkit-transform: translateX(-50%) translateY(-50%);
+				-moz-transform: translateX(-50%) translateY(-50%);
+				-ms-transform: translateX(-50%) translateY(-50%);
+				-o-transform: translateX(-50%) translateY(-50%);
+				transform: translateX(-50%) translateY(-50%);
+				color: #193145;
+				font-size: 0.8rem;
+			}
+		}
+		.searcher-button:hover{
+			background-color: lighten(#9cb8d5,20%);
+		}
+		svg{
+			position: absolute;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-moz-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			-o-transform: translateY(-50%);
+			transform: translateY(-50%);
+			left: 10px;
+			width: 15px;
+			height: 15px;
+			fill: #9cb8d5;
+		}
+	}
+	.questions-container{
+		position: relative;
+		.question-container{
+			position: relative;
+			width: 100%;
+			margin-bottom: 30px;
+			overflow: hidden;
+			.question{
+				position: relative;
+				width: 47%;
+				margin-right: 6%;
+				float: left; 
+				text-align: right;
+				font-size: 1.4rem;
+				color: #476484;
+			}
+			.answer{
+				position: relative;
+				width: 47%;
+				float: left;
+				text-align: left;
+				font-size: 1.2rem;
+				color: #7e9ab8;
+			}
+		}
+		.question-container:last-child{
+			margin-bottom: 0px;
 		}
 	}
 }

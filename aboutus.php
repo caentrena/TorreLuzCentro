@@ -1,6 +1,6 @@
 <?php include 'header.php';?>
 
-    <section class="aboutus-page page-content">
+    <section class="aboutus-page page-content no-margin-top">
         <div class="top-photo big-width" style="background-image: url('assets/image/foto-slider1.jpg');"></div>
         <div class="wellcome-container small-width">
             <p class="title">Bienvenido al hotel</p>
@@ -20,6 +20,7 @@
                 <p class="email"><span class="bigger-txt">Correo electrónico: </span>info@kenshomykonos.com</p>
             </div>
         </div>
+    </section>
 
 <?php include 'footer.php';?>
 
