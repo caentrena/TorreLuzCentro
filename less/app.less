@@ -1,6 +1,35 @@
 /* css reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block; } body {line-height: 1; } ol, ul {list-style: none; } blockquote, q {quotes: none; } blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none; } table {border-collapse: collapse; border-spacing: 0; }
 
+/*colores */
+@azulflojo: #9cb8d5; 
+@azulmedio: #7e9ab8;
+@azulnormal: #476484;
+@azuloscuro: #193145;
+@turquesa: #d8e8f8;
+
+/*fuentes*/
+@font-face {
+    font-family: 'Dosis-Bold';
+    src: url('../assets/fonts/Dosis-Bold.ttf') format('truetype'),
+}
+@font-face {
+    font-family: 'Dosis-Light';
+    src: url('../assets/fonts/Dosis-Light.ttf') format('truetype'),
+}
+@font-face {
+    font-family: 'palaquin-bold';
+    src: url('../assets/fonts/PalanquinDark-Bold.ttf') format('truetype'),
+}
+@font-face {
+    font-family: 'palaquin-regular';
+    src: url('../assets/fonts/PalanquinDark-Regular.ttf') format('truetype'),
+}
+@dosis-bold: 'Dosis-Bold';
+@dosis-light: 'Dosis-Light';
+@palaquin-bold: 'palaquin-bold';
+@palaquin-regular: 'palaquin-regular';
+
 /*  Elementos generales  */
 *:focus{
 	outline: none;
@@ -20,7 +49,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	position: relative;
 	width: 100%;
 	height: 1px;
-	background-color: #193145;
+	background-color: @azuloscuro;
 }
 
 .page-content{
@@ -94,7 +123,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 				position: relative;
 				width: 100%;
 				height: 100%;
-				fill: #7e9ab8;
+				fill: @azulmedio;
 			}
 			svg:hover{
 				fill: white;
@@ -116,6 +145,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 			position: relative;
 			font-size: 3.5rem;
 			color: white;
+			font-family: @dosis-light;
 		}
 	}
 }
@@ -149,7 +179,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 					p{
 						text-align: right;
 						font-size: 1.2rem;
-						color: #193145;
+						color: @azuloscuro;
 					}
 				}
 				.input{
@@ -175,7 +205,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 					select{
 						position: relative;
 						height: 25px;
-						border: 1px solid #193145;
+						border: 1px solid @azuloscuro;
 						border-radius: 20px;
 						padding: 0 10px;
 						cursor: pointer;
@@ -187,7 +217,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 						position: relative;
 						width: 100%;
 						height: 25px;
-						border: 1px solid #193145;
+						border: 1px solid @azuloscuro;
 						border-radius: 20px;
 						padding: 0 10px;
 					}
@@ -196,7 +226,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 						resize: none;
 						width: 100%;
 						height: 60px;
-						border: 1px solid #193145;
+						border: 1px solid @azuloscuro;
 						border-radius: 20px;
 						padding: 10px;
 					}
@@ -230,7 +260,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 				position: relative;
 				width: 94%;
 				float: left;
-				color: #193145;
+				color: @azuloscuro;
 			}
 		}
 	}
@@ -240,7 +270,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 		overflow: hidden;
 		.prev-button{
 			position: relative;
-			border: 1px solid #193145;
+			border: 1px solid @azuloscuro;
 			border-radius: 20px;
 			box-sizing: border-box;
 			margin-right: 30px;
@@ -254,7 +284,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 		}
 		.next-button{
 			position: relative;
-			border: 1px solid #193145;
+			border: 1px solid @azuloscuro;
 			border-radius: 20px;
 			box-sizing: border-box;
 			float: right;
@@ -274,7 +304,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 		text-align: center;
 		font-size: 2.5rem;
 		line-height: 3rem;
-		color: #193145; 
+		color: @azuloscuro; 
 	}
 }
 
@@ -301,7 +331,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 header{
 	position: relative;
 	width: 100%;
-	border-bottom: 3px solid #7e9ab8;
+	border-bottom: 3px solid @azulflojo;
 	.header-wrapper{
 		position: relative;
 
@@ -347,11 +377,11 @@ header{
 					a{
 						text-decoration: none;
 						cursor: pointer;
-						color: #7e9ab8;
+						color: @azulmedio;
 						padding: 0 10px;
 					}
 					a:hover{
-						color: #193145;
+						color: @azuloscuro;
 					}
 				}
 				li:last-child{
@@ -368,7 +398,7 @@ header{
 				position: relative;
 				margin-right: 20px;
 				font-size: 1rem;
-				color: #7e9ab8;
+				color: @azulmedio;
 				top: 50%;
 				-webkit-transform: translateY(-50%);
 				-moz-transform: translateY(-50%);
@@ -387,7 +417,7 @@ header{
 				-o-transform: translateY(-50%);
 				transform: translateY(-50%);
 				height: 20px;
-				border: 1px solid #7e9ab8;
+				border: 1px solid @azulmedio;
 				border-radius: 20px;
 				box-sizing: border-box;
 				float: left;
@@ -398,10 +428,10 @@ header{
 			.date-input::-webkit-datetime-edit-month-field,
 			.date-input::-webkit-datetime-edit-day-field,
 			.date-input::-webkit-datetime-edit-year-field{
-				color: #7e9ab8;
+				color: @azulmedio;
 			}
 			.date-input::-webkit-calendar-picker-indicator { 
-				color: #7e9ab8;
+				color: @azulmedio;
 			}
 			.calendar-icon{
 				position: relative;
@@ -432,7 +462,7 @@ header{
 				-ms-transform: translateY(-50%);
 				-o-transform: translateY(-50%);
 				transform: translateY(-50%);
-				border: 1px solid #7e9ab8;
+				border: 1px solid @azulmedio;
 				border-radius: 20px;
 				box-sizing: border-box;
 				float: left;
@@ -447,11 +477,11 @@ header{
 					-o-transform: translateY(-50%) translateX(-50%);
 					transform: translateY(-50%) translateX(-50%);
 					font-size: 1rem;
-					color: #7e9ab8;
+					color: @azulmedio;
 				}
 			}
 			.booking-button:hover{
-				border: 1px solid #193145;
+				border: 1px solid @azuloscuro;
 			}
 		}
 		.lenguage-container{
@@ -459,11 +489,11 @@ header{
 			top: 0px;
 			right: 0px;
 			padding: 5px 8px;
-			border: 1px solid #7e9ab8;
+			border: 1px solid @azulmedio;
 			border-radius: 20px;
 			cursor: pointer;
 			p{
-				color: #193145;
+				color: @azuloscuro;
 				font-size: 0.8rem;
 			}
 		}
@@ -484,7 +514,7 @@ header{
 		.title{
 			position: relative;
 			font-size: 2rem;
-			color: #193145;
+			color: @azuloscuro;
 			margin-bottom: 30px;
 		}
 		.offer-cards-container{
@@ -515,7 +545,7 @@ header{
 							position: absolute;
 							top: 50%;
 							left: 50%;
-							color: #193145;
+							color: @azuloscuro;
 							-webkit-transform: translateY(-50%) translateX(-50%);
 							-moz-transform: translateY(-50%) translateX(-50%);
 							-ms-transform: translateY(-50%) translateX(-50%);
@@ -527,14 +557,14 @@ header{
 				.title{
 					position: relative;
 					font-size: 1.5rem;
-					color: #193145;
+					color: @azuloscuro;
 					margin: 15px 0;
 					padding-right: 5%;
 				}
 				.description{
 					position: relative;
 					font-size: 1.2rem;
-					color: #193145;
+					color: @azuloscuro;
 					margin-bottom: 15px;
 					padding-right: 5%;
 				}
@@ -543,12 +573,12 @@ header{
 					padding: 5px;
 					width: 70px;
 					cursor: pointer;
-					border: 1px solid #193145;
+					border: 1px solid @azuloscuro;
 					border-radius: 20px; 
 					p{
 						position: relative;
 						font-size: 1rem;
-						color: #193145;
+						color: @azuloscuro;
 					}
 				}
 			}
@@ -576,13 +606,13 @@ header{
 			position: relative;
 			margin-bottom: 30px;
 			font-size: 2rem;
-			color: #193145;
+			color: @azuloscuro;
 		}
 		.description{
 			position: relative;
 			margin-bottom: 20px;
 			font-size: 1.2rem;
-			color: #193145;
+			color: @azuloscuro;
 		}
 		.description:last-child{
 			margin-bottom: 0px;
@@ -595,18 +625,18 @@ header{
 			position: relative;
 			margin-bottom: 30px;
 			font-size: 2rem;
-			color: #193145;
+			color: @azuloscuro;
 			text-align: center;
 		}
 		.direction{
 			position: relative;
 			margin: 0 auto;
 			font-size: 1.2rem;
-			color: #193145;
+			color: @azuloscuro;
 			margin-bottom: 20px;
 			.bigger-txt{
 				font-size: 1.4rem;
-				color: #193145;
+				color: @azuloscuro;
 			}
 		}
 		.map-container{
@@ -631,10 +661,10 @@ header{
 			}
 			p{
 				font-size: 1.2rem;
-				color: #193145;
+				color: @azuloscuro;
 				.bigger-txt{
 					font-size: 1.3rem;
-					color: #193145;
+					color: @azuloscuro;
 				}
 			}
 		}
@@ -656,19 +686,19 @@ header{
 			float: left;
 			height: 100%;
 			margin-right: 3%;
-			border: 1px solid #193145;
+			border: 1px solid @azuloscuro;
 			border-radius: 20px;
 			padding: 5px 30px;
-			color: #193145;
+			color: @azuloscuro;
 		}
 		.searcher-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-		    color: #9cb8d5;
+		    color: @azulflojo;
 		}
 		::-moz-placeholder { /* Firefox 19+ */
-		    color: #9cb8d5;
+		    color: @azulflojo;
 		}
 		:-ms-input-placeholder { /* IE 10+ */
-		    color: #9cb8d5;
+		    color: @azulflojo;
 		}
 		.searcher-button{
 			position: relative;
@@ -676,7 +706,7 @@ header{
 			width: 15%;
 			cursor: pointer;
 			height: 100%;
-			border: 1px solid #193145;
+			border: 1px solid @azuloscuro;
 			border-radius: 20px;
 			box-sizing: border-box;
 			p{
@@ -688,12 +718,12 @@ header{
 				-ms-transform: translateX(-50%) translateY(-50%);
 				-o-transform: translateX(-50%) translateY(-50%);
 				transform: translateX(-50%) translateY(-50%);
-				color: #193145;
+				color: @azuloscuro;
 				font-size: 0.8rem;
 			}
 		}
 		.searcher-button:hover{
-			background-color: lighten(#9cb8d5,20%);
+			background-color: lighten(@azulflojo,20%);
 		}
 		svg{
 			position: absolute;
@@ -706,7 +736,7 @@ header{
 			left: 10px;
 			width: 15px;
 			height: 15px;
-			fill: #9cb8d5;
+			fill: @azulflojo;
 		}
 	}
 	.questions-container{
@@ -723,7 +753,7 @@ header{
 				float: left; 
 				text-align: right;
 				font-size: 1.4rem;
-				color: #476484;
+				color: @azulnormal;
 			}
 			.answer{
 				position: relative;
@@ -731,7 +761,7 @@ header{
 				float: left;
 				text-align: left;
 				font-size: 1.2rem;
-				color: #7e9ab8;
+				color: @azulmedio;
 			}
 		}
 		.question-container:last-child{
@@ -771,7 +801,7 @@ header{
 				position: relative;
 				margin-bottom: 30px;
 				font-size: 2rem;
-				color: #193145;
+				color: @azuloscuro;
 			}
 
 		}
@@ -785,7 +815,7 @@ header{
 		margin: 0 auto;
 		width: 230px;
 		margin-top: 50px;
-		border: 1px solid #193145;
+		border: 1px solid @azuloscuro;
 		.icon{
 			float: left;
 			position: relative;
@@ -811,7 +841,7 @@ header{
 			text-align: center;
 			position: relative;
 			font-size: 1rem;
-			color: #193145;
+			color: @azuloscuro;
 		}
 	}
 
@@ -839,14 +869,14 @@ header{
 				position: relative;
 				margin-bottom: 30px;
 				font-size: 2rem;
-				color: #193145;
+				color: @azuloscuro;
 			}
 			.description{
 				text-align: center;
 				position: relative;
 				margin-bottom: 20px;
 				font-size: 1.2rem;
-				color: #193145;
+				color: @azuloscuro;
 			}
 		}
 		.service-card-container:nth-child(2n){
@@ -860,7 +890,7 @@ header{
 		margin: 0 auto;
 		width: 230px;
 		margin-top: 50px;
-		border: 1px solid #193145;
+		border: 1px solid @azuloscuro;
 		.icon{
 			float: left;
 			position: relative;
@@ -886,7 +916,7 @@ header{
 			text-align: center;
 			position: relative;
 			font-size: 1rem;
-			color: #193145;
+			color: @azuloscuro;
 		}
 	}
 }
@@ -931,7 +961,7 @@ header{
 				position: relative;
 				float: left;
 				font-size: 1.5rem;
-				color: #193145;
+				color: @azuloscuro;
 				margin-bottom: 10px;
 
 			}
@@ -940,7 +970,7 @@ header{
 				width: 48%;
 				position: relative;
 				font-size: 1.2rem;
-				color: #193145;
+				color: @azuloscuro;
 			}
 			.icon-line{
 				float: left;
@@ -953,14 +983,14 @@ header{
 					margin-top: 20px;
 					padding: 5px;
 					cursor: pointer;
-					border: 1px solid #193145;
+					border: 1px solid @azuloscuro;
 					border-radius: 20px;
 					p{
 						text-align: center;
 
 						position: relative;
 						font-size: 1rem;
-						color: #193145;
+						color: @azuloscuro;
 					}
 				}
 				.icon{
@@ -987,14 +1017,14 @@ header{
 					padding: 5px;
 					width: 70px;
 					cursor: pointer;
-					border: 1px solid #193145;
+					border: 1px solid @azuloscuro;
 					border-radius: 20px;
 					p{
 						text-align: center;
 
 						position: relative;
 						font-size: 1rem;
-						color: #193145;
+						color: @azuloscuro;
 					}
 				}
 				.booking-button{
@@ -1005,13 +1035,13 @@ header{
 					margin-left: 10px;
 					width: 70px;
 					cursor: pointer;
-					border: 1px solid #193145;
+					border: 1px solid @azuloscuro;
 					border-radius: 20px;
 					p{
 						text-align: center;
 						position: relative;
 						font-size: 1rem;
-						color: #193145;
+						color: @azuloscuro;
 					}
 				}
 
@@ -1032,7 +1062,7 @@ header{
 		margin: 0 auto;
 		width: 230px;
 		margin-top: 50px;
-		border: 1px solid #193145;
+		border: 1px solid @azuloscuro;
 		.icon{
 				float: left;
 				position: relative;
@@ -1058,7 +1088,7 @@ header{
 				text-align: center;
 				position: relative;
 				font-size: 1rem;
-				color: #193145;
+				color: @azuloscuro;
 			}
 		}
 
@@ -1078,7 +1108,7 @@ header{
 			width: 60%;
 			position: relative;
 			font-size: 1.2rem;
-			color: #193145;
+			color: @azuloscuro;
 			margin-right: 20px;
 		}
 		.icon-line{
@@ -1111,12 +1141,12 @@ header{
 				margin-left: 10px;
 				width: 70px;
 				cursor: pointer;
-				border: 1px solid #193145;
+				border: 1px solid @azuloscuro;
 				p{
 					text-align: center;
 					position: relative;
 					font-size: 1rem;
-					color: #193145;
+					color: @azuloscuro;
 				}
 			}
 		}
@@ -1128,7 +1158,7 @@ header{
 		margin: 0 auto;
 		width: 230px;
 		margin-top: 50px;
-		border: 1px solid #193145;
+		border: 1px solid @azuloscuro;
 		.icon{
 			float: left;
 			position: relative;
@@ -1154,7 +1184,7 @@ header{
 			text-align: center;
 			position: relative;
 			font-size: 1rem;
-			color: #193145;
+			color: @azuloscuro;
 		}
 	}
 
@@ -1169,7 +1199,7 @@ header{
 footer{
 	position: relative;
 	width: 100%;
-	border-top: 3px solid #7e9ab8;
+	border-top: 3px solid @azulmedio;
 	.footer-wrapper{
 		position: relative;
 		margin-top: 60px;
@@ -1185,25 +1215,25 @@ footer{
 				text-transform: uppercase;
 				font-size: 1.1rem;
 				margin-bottom: 15px;
-				color: #193145;
+				color: @azuloscuro;
 			}
 			.address, .telephone, .email{
 				position: relative;
 				font-size: 1rem;
-				color: #476484;
+				color: @azulnormal;
 				line-height: 1.5rem;
 				span:hover{
-					color: #193145;
+					color: @azuloscuro;
 				}
 			}
 			.address, .email span{
 				cursor: pointer;
 			}
 			.address:hover{
-				color: #193145;
+				color: @azuloscuro;
 			}
 			.email span:hover{
-				color: #193145;
+				color: @azuloscuro;
 			}
 		}
 		.time-container{
@@ -1214,7 +1244,7 @@ footer{
 				position: relative;
 				text-transform: uppercase;
 				font-size: 1.1rem;
-				color: #193145;
+				color: @azuloscuro;
 				margin-bottom: 15px;
 			}
 			.time, .hour{
@@ -1222,7 +1252,7 @@ footer{
 				margin-bottom: 10px;
 				p{
 					font-size: 1rem;
-					color: #476484;
+					color: @azulnormal;
 					float: left;
 					margin-top: 7px;
 					margin-left: 10px;
@@ -1270,7 +1300,7 @@ footer{
 				p{
 					position: relative;
 					font-size: 0.8rem;
-					color: #476484;
+					color: @azulnormal;
 				}
 			}
 

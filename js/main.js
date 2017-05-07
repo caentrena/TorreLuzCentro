@@ -15,7 +15,6 @@ function bindEvents(){
 }
 
 function initializePage(){
-
 	if($(".contact-page").index() != -1){
 		initializeForm($(".contact-page .form-slider"));
 	}else if($(".opinion-page").index() != -1){
@@ -32,7 +31,6 @@ function changeColor(){
 		}else{
 			$(allIcons[i]).css("fill","black");
 		}
-
 	}
 }
 
@@ -42,10 +40,12 @@ function initializeForm(form){
 }
 
 function changeFormPage(){
+		console.log("entre");
 	if(!inTransition){
 		inTransition = true;
 		var slider = $(this).closest(".form-slider");
 		if($(this).hasClass("prev-button")){
+			console.log("para atras");
 			if(currentFormPage == 1){
 				disableButton(slider.find(".buttons .prev-button"));
 			}
@@ -53,6 +53,7 @@ function changeFormPage(){
 			$(".conditions-container").css("display","none");
 			makeAnimationToRightOfForm(currentFormPage - 1);
 		}else if($(this).hasClass("next-button")){
+			console.log("para alante");
 			enableButton(slider.find(".buttons .prev-button"));
 			//cambiar texto
 			if(currentFormPage >= amountsOfFormPages -2){
@@ -64,6 +65,8 @@ function changeFormPage(){
 			//deshabilitar el boton
 			if(currentFormPage < amountsOfFormPages -1){
 				makeAnimationToLeftOfForm(currentFormPage + 1);
+			}else{
+				inTransition = false;
 			}
 		}
 	}
