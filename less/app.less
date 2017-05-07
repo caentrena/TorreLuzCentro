@@ -23,11 +23,100 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .page-content{
 	position: relative;
 	width: 100%;
+	min-height: 50vh;
 	margin: 5% 0;
 }
 .no-margin-top{
 	margin-top: 0px;
 }
+
+.icon{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	.tag-icon{
+		position: absolute;
+		top: -5px;
+		right: 0px;
+		height: 20px;
+		display: none;
+		border: 1px solid black;
+		p{
+			position: absolute;
+			padding: 0px 5px;
+		}
+	}
+	svg{
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.slider{
+	position: relative;
+	.slider-container{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		.slide{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		.active{
+			opacity: 1;
+		}
+	}
+	.slider-controller{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		.prev-button, .next-button{
+			position: absolute;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-moz-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			-o-transform: translateY(-50%);
+			transform: translateY(-50%);
+			width: 30px;
+			height: 30px;
+			cursor: pointer;
+			svg{
+				position: relative;
+				width: 100%;
+				height: 100%;
+				fill: #7e9ab8;
+			}
+			svg:hover{
+				fill: white;
+			}
+		}
+		.prev-button{
+			left: 5%;
+		}
+		.next-button{
+			right: 5%;
+		}
+	}
+	.slider-content{
+		position: absolute;
+		bottom: 10%;
+		left: 8%;
+		width: 60%;
+		p{
+			position: relative;
+			font-size: 3.5rem;
+			color: white;
+		}
+	}
+}
+
 .title-page{
 	position: relative;
 	margin-bottom: 3%;
@@ -233,70 +322,8 @@ header{
 /*  Index page  */
 .index-page{
 	.slider{
-		position: relative;
 		width: 100%;
 		height: 35vw;
-		.slider-container{
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			.slide{
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				opacity: 0;
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-			}
-			.active{
-				opacity: 1;
-			}
-		}
-		.slider-controller{
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			.prev-button, .next-button{
-				position: absolute;
-				top: 50%;
-				-webkit-transform: translateY(-50%);
-				-moz-transform: translateY(-50%);
-				-ms-transform: translateY(-50%);
-				-o-transform: translateY(-50%);
-				transform: translateY(-50%);
-				width: 30px;
-				height: 30px;
-				cursor: pointer;
-				svg{
-					position: relative;
-					width: 100%;
-					height: 100%;
-					fill: #7e9ab8;
-				}
-				svg:hover{
-					/*fill: #193145;*/
-					fill: white;
-				}
-			}
-			.prev-button{
-				left: 5%;
-			}
-			.next-button{
-				right: 5%;
-			}
-		}
-		.slider-content{
-			position: absolute;
-			bottom: 10%;
-			left: 8%;
-			width: 60%;
-			p{
-				position: relative;
-				font-size: 3.5rem;
-				color: white;
-			}
-		}
 	}
 	.last-offers{
 		position: relative;
@@ -557,7 +584,121 @@ header{
 
 /* Contacto */
 .contact-page{
-	
+	.form-slider{
+		position: relative;
+		width: 60%;
+		margin: 0 auto;
+		.form-slider-container{
+			position: relative;
+			width: 100%;
+			height: 65px;
+			margin-bottom: 30px;
+			.form-slider-page{
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				display: none;
+				opacity: 0;
+				.row-form{
+					position: relative;
+					width: 100%;
+					margin-bottom: 15px;
+					overflow: hidden;
+					.label{
+						position: relative;
+						width: 38%;
+						margin-right: 2%;
+						float: left;
+
+						p{
+							text-align: right;
+							font-size: 1.2rem;
+							color: #193145;
+						}
+					}
+					.input{
+						position: relative;
+						width: 60%;
+						float: left;
+						.input-text{
+							position: relative;
+							width: 100%;
+							height: 25px;
+							border: 1px solid #193145;
+							padding: 0 10px;
+						}
+						.input-text-area{
+							position: relative;
+							resize: none;
+							width: 100%;
+							height: 60px;
+							border: 1px solid #193145;
+							padding: 10px;
+						}
+					}
+				}
+				.row-form:last-child{
+					margin-bottom: 0px;
+				}
+			}
+		}
+		.conditions-container{
+			position: relative;
+			width: 100%;
+			margin-bottom: 30px;
+			display: none;
+			.condition-container{
+				position: relative;
+				width: 100%;
+				margin-bottom: 10px;
+				overflow: hidden;
+				input{
+					position: relative;
+					width: 5%;
+					height: 20px;
+					border: 1px solid red;
+					box-sizing: border-box;
+					float: left;
+				}
+				p{
+					position: relative;
+					width: 94%;
+					float: left;
+					color: #193145;
+				}
+			}
+		}
+		.buttons{
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+			.prev-button{
+				position: relative;
+				border: 1px solid #193145;
+				box-sizing: border-box;
+				margin-right: 30px;
+				float: right;
+				display: none;
+				cursor: pointer;
+				p{
+					position: relative;
+					padding: 0 10px;
+				}
+			}
+			.next-button{
+				position: relative;
+				border: 1px solid #193145;
+				box-sizing: border-box;
+				float: right;
+				cursor: pointer;
+				p{
+					position: relative;
+					padding: 0 10px;
+				}
+			}
+		}
+	}
 }
 
 /* Services page */

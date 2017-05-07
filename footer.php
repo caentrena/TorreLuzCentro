@@ -32,6 +32,9 @@
 
 		<script src="js/jquery-3.1.1.min.js"></script>
     	<script src="js/main.js"></script>
-        <script src="js/TweenLite.js"></script>
+        <script src="js/TimelineLite.min.js"></script>
+        <script src="js/TimelineMax.min.js"></script>
+        <script src="js/TweenLite.min.js"></script>
+        <script src="js/TweenMax.min.js"></script>
     </body>
 </html>
