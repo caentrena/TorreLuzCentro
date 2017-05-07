@@ -6,7 +6,8 @@
     </head>
     <body>
     <header>
-    	<div class="header-wrapper medium-width">
+        <div class="bread-crumb"><p><a href="index.php">Home</a>  >  </p></div>
+        <div class="header-wrapper medium-width">
     		<a href="index.php"><div class="logo-container">
     			<img src="assets/image/logo.png">
     		</div></a>

@@ -6,7 +6,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 @azulmedio: #7e9ab8;
 @azulnormal: #476484;
 @azuloscuro: #193145;
-@turquesa: #d8e8f8;
 
 /*fuentes*/
 @font-face {
@@ -155,6 +154,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	margin: 0 auto;
 	.bigger-height{
 		height: 200px !important;
+	}
+	.medium-height{
+		height: 150px !important;
 	}
 	.form-slider-container{
 		position: relative;
@@ -385,12 +387,30 @@ header{
 	position: relative;
 	width: 100%;
 	border-bottom: 3px solid @azulflojo;
+	.bread-crumb{
+		position: absolute;
+		bottom: -25px;
+		left: 6%;
+		z-index: 5;
+		height: 25px;
+		background-color: rgba(0,0,0,0.5);
+		p{
+			color: white;
+			font-size: 0.8rem;
+			line-height: 1.2rem;
+			padding: 5px;
+			color: white;
+			a{
+				text-decoration: none;
+				color: white;
+			}
+		}
+	}
 	.header-wrapper{
 		position: relative;
-
+		overflow: hidden;
 		margin-top: 20px;
 		padding-bottom: 10px;
-		overflow: hidden;
 		a{
 			position: relative;
 			text-decoration: none;
@@ -1002,8 +1022,97 @@ header{
 }
 
 .booking-page{
+	.room-recordation{
+			position: relative;
+			margin: 0 auto;
+			width: 84%; 
+			overflow: hidden;
+			margin-bottom: 40px;
+		.room-image{
+			position: relative;
+			float: left;
+			width: 25%;
+			height: 180px;
+			margin-right: 5%;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		.room-information{
+			position: relative;
+			float: left;
+			width: 70%;
+			.icons-container{
+				position: relative;
+				margin: 20px 0;
+				svg{
+					position: relative;
+					width: 20px;
+					height: 20px;
+					margin-right: 10px;
+					cursor: pointer;
+				}
+				svg:last-child{
+					margin-right: 0px;
+				}
+			}
+			p{
+				font-size: 1.4rem;
+				margin-bottom: 10px;
+				color: @azulflojo;
+				.smaller{
+					font-size: 1.2rem;
+					color: @azuloscuro;
+				}
+			}
+		}
+	}
+	.select-container{
+		position: relative;
+		margin: 0 auto;
+		width: 84%; 
+		margin-bottom: 40px;
+		.row{
+			position: relative;
+			width: 100%;
+			margin-bottom: 10px;
+			overflow: hidden;
+			input{
+				position: relative;
+				float: left;
+				width: 2%;
+				height: 20px;
+			}
+			.option{
+				position: relative;
+				width: 95%;
+				height: 20px;
+				float: left;
+				border: 1px solid @azuloscuro;
+				border-radius: 15px;
+				p{
+					position: relative;
+					font-size: 1rem;
+					float: left;
+					color: @azuloscuro;
+					margin: 0 20px;
+					margin-top: 2px;
+				}
+				.price{
+					float: right;
+				}
+			}
 
-
+		}
+	}
+	.titular{
+		position: relative;
+		margin: 20px 0;
+		margin-left: 8%;
+		font-size: 2rem;
+		line-height: 2.5rem;
+		color: @azuloscuro; 
+	}
 }
 
 .payment-page{
@@ -1530,8 +1639,6 @@ header{
 			color: #193145;
 		}
 	}
-
-
 }
 
 .select-room-page{
@@ -1631,7 +1738,6 @@ header{
 			}
 		}
 	}
-
 }
 
 

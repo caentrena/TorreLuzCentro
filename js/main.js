@@ -15,12 +15,19 @@ function bindEvents(){
 }
 
 function initializePage(){
+	if($(".page-content").hasClass("aboutus-page")){
+		$("header .bread-crumb").find("p").append("Sobre nosotros");
+	}else if($(".page-content").hasClass("rooms-page")){
+		$("header .bread-crumb").find("p").append("Habitaciones");
+	}
 	if($(".contact-page").index() != -1){
 		initializeForm($(".contact-page .form-slider"));
 	}else if($(".opinion-page").index() != -1){
 		initializeForm($(".opinion-page .form-slider"));
 	}else if($(".payment-page").index() != -1){
 		initializeForm($(".payment-page .form-slider"));
+	}else if($(".booking-page").index() != -1){
+		initializeForm($(".booking-page .form-slider"));
 	}
 }
 
@@ -57,7 +64,11 @@ function changeFormPage(){
 			enableButton(slider.find(".buttons .prev-button"));
 			//cambiar texto
 			if(currentFormPage >= amountsOfFormPages -2){
-				$(this).find("p").text("Enviar");
+				if($(".page-content").hasClass("opinion-page")){
+					$(this).find("p").text("Enviar");	
+				}else if($(".page-content").hasClass("booking-page")){
+					$(this).find("p").text("Realizar pago");
+				}
 			}
 			if($(".page-content").hasClass(".contact-page")){
 				$(".conditions-container").css("display","block");
