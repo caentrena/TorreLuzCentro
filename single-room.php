@@ -243,7 +243,7 @@
                     </div>
                 </div>
                 <div class="icon-line">
-                    <div class="booking-button button"><p>Reservar</p></div>
+                    <a href="booking.php"><div class="booking-button button"><p>Reservar</p></div></a>
                 </div>
 
 
@@ -254,7 +254,7 @@
 
         <div class="separator small-width"></div>
 
-        <div class="go-to-valuations-button button">
+        <a href="valuations.php"><div class="go-to-valuations-button button">
 
             <div class="icon">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -367,7 +367,7 @@
             <p>Ver valoraciones</p>
 
 
-        </div>
+        </div></a>
 
     </section>
 

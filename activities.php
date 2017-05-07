@@ -21,7 +21,7 @@
                     </div>
                 </div>
 
-                <div class="title"> <p> Ruta guiada por Almería</p></div>
+                <a href="google.com"><div class="title button"> <p> Ruta guiada por Almería</p></div></a>
                 <div class="description"> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p></div>
 
 
@@ -47,7 +47,7 @@
                     </div>
                 </div>
 
-                <div class="title"> Clases de buceo</div>
+                <a href="www.google.com"><div class="title button"> Clases de buceo</div></a>
                 <div class="description"> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p></div>
 
 

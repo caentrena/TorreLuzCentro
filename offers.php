@@ -11,7 +11,7 @@
                     </div>
                     <div class="title"><p>Escapada romántica</p></div>
                     <div class="description"><p>Muy lejos, más allá de las montañas de palabras, alejados de los países de las vocales y las consonantes, viven los textos simulados. Viven aislados en casas de letras, en la costa de la semántica, un gran océano de lenguas. Un riachuelo llamado Pons fluye por su pueblo y los abastece con las normas necesarias.</p></div>
-                    <div class="price-button"><p>Desde 30€</p></div>
+                    <a href="booking.php"><div class="price-button button"><p>Desde 30€</p></div></a>
                 </div>
                 <div class="offer-card-container">
                     <div class="photo-container" style="background-image: url('assets/image/diadelamadre.jpg');">
@@ -19,7 +19,7 @@
                     </div>
                     <div class="title">Día de la madre</div>
                     <div class="description">Muy lejos, más allá de las montañas de palabras, alejados de los países de las vocales y las consonantes, viven los textos simulados. Viven aislados en casas de letras, en la costa de la semántica, un gran océano de lenguas. Un riachuelo llamado Pons fluye por su pueblo y los abastece con las normas necesarias.</div>
-                    <div class="price-button"><p>Desde 27€</p></div>
+                    <a href="booking.php"><div class="price-button button"><p>Desde 27€</p></div></a>
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@
                     </div>
                     <div class="title"><p>Vacaciones de Navidad</p></div>
                     <div class="description"><p>Muy lejos, más allá de las montañas de palabras, alejados de los países de las vocales y las consonantes, viven los textos simulados. Viven aislados en casas de letras, en la costa de la semántica, un gran océano de lenguas. Un riachuelo llamado Pons fluye por su pueblo y los abastece con las normas necesarias.</p></div>
-                    <div class="price-button"><p>Desde 30€</p></div>
+                    <a href="booking.php"><div class="price-button button"><p>Desde 30€</p></div></a>
                 </div>
                 <div class="offer-card-container">
                     <div class="photo-container" style="background-image: url('assets/image/diadelpadre.jpg');">
@@ -40,7 +40,7 @@
                     </div>
                     <div class="title">Día del padre</div>
                     <div class="description">Muy lejos, más allá de las montañas de palabras, alejados de los países de las vocales y las consonantes, viven los textos simulados. Viven aislados en casas de letras, en la costa de la semántica, un gran océano de lenguas. Un riachuelo llamado Pons fluye por su pueblo y los abastece con las normas necesarias.</div>
-                    <div class="price-button"><p>Desde 27€</p></div>
+                        <a href="booking.php"><div class="price-button button"><p>Desde 27€</p></div></a>
                 </div>
             </div>
         </div>
