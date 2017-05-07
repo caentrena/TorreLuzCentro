@@ -1,7 +1,8 @@
 <?php include 'header.php';?>
 
-    <section class="contact-page page-content">
-        <div class="title-page"><p>Contacto</p></div>
+    <section class="valuations-page page-content">
+
+        <div class="title-page"><p>Valoraciones</p></div>
         <div class="form-slider">
             <div class="form-slider-container">
                 <div class="form-slider-page">
@@ -10,23 +11,23 @@
                         <div class="input"><input class="input-text" type="text"></div>
                     </div>
                     <div class="row-form">
-                        <div class="label required"><p>Apellidos *</p></div>
-                        <div class="input"><input class="input-text" type="text"></div>
-                    </div>
-                </div>
-                <div class="form-slider-page">
-                    <div class="row-form">
                         <div class="label required"><p>Email *</p></div>
                         <div class="input"><input class="input-text" type="text"></div>
                     </div>
+                </div>
+                <div class="form-slider-page">
                     <div class="row-form">
-                        <div class="label required"><p>Teléfono de contacto</p></div>
+                        <div class="label required"><p>¿Qué quieres valorar? *</p></div>
+                        <div class="input"><input class="input-text" type="text"></div>
+                    </div>
+                    <div class="row-form">
+                        <div class="label required"><p>Valoración global</p></div>
                         <div class="input"><input class="input-text" type="text"></div>
                     </div>
                 </div>
                 <div class="form-slider-page">
                     <div class="row-form">
-                        <div class="label required"><p>Mensaje *</p></div>
+                        <div class="label required"><p>Comentario *</p></div>
                         <div class="input">
                             <textarea required class="input-text-area"></textarea>
                         </div>

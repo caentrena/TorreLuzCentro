@@ -1,5 +1,5 @@
 var currentFormPage = 0;
-var amountsOfFormPages = $(".contact-page .form-slider .form-slider-container .form-slider-page").length;
+var amountsOfFormPages = $(".form-slider .form-slider-container .form-slider-page").length;
 var inTransition = false;
 
 
@@ -9,15 +9,18 @@ $(document).ready(function(){
 });
 
 function bindEvents(){
-	$(".contact-page .form-slider .buttons .prev-button").click(changeFormPage);
-	$(".contact-page .form-slider .buttons .next-button").click(changeFormPage);
+	$(".form-slider .buttons .prev-button").click(changeFormPage);
+	$(".form-slider .buttons .next-button").click(changeFormPage);
 }
 
 function initializePage(){
 
 	if($(".contact-page").index() != -1){
 		initializeForm($(".contact-page .form-slider"));
+	}else if($(".valuations-page").index() != -1){
+		initializeForm($(".valuations-page .form-slider"));
 	}
+
 	
 }
 
@@ -28,34 +31,34 @@ function initializeForm(form){
 
 function changeFormPage(){
 	if(!inTransition){
-		inTrasition = true;
+		inTransition = true;
+		var slider = $(this).closest(".form-slider");
 		if($(this).hasClass("prev-button")){
 			if(currentFormPage == 1){
-				disableButton($(".contact-page .form-slider .buttons .prev-button"));
+				disableButton(slider.find(".buttons .prev-button"));
 			}
 			$(this).parent().find(".next-button").find("p").text("Siguiente");
 			$(".conditions-container").css("display","none");
 			makeAnimationToRightOfForm(currentFormPage - 1);
 		}else if($(this).hasClass("next-button")){
-			enableButton($(".contact-page .form-slider .buttons .prev-button"));
+			enableButton(slider.find(".buttons .prev-button"));
 			//cambiar texto
 			if(currentFormPage >= amountsOfFormPages -2){
-				$(".conditions-container").css("display","block");
 				$(this).find("p").text("Enviar");
+			}
+			if($(".page-content").hasClass(".contact-page")){
+				$(".conditions-container").css("display","block");
 			}
 			//deshabilitar el boton
 			if(currentFormPage < amountsOfFormPages -1){
-				console.log("ir a siguiente");
 				makeAnimationToLeftOfForm(currentFormPage + 1);
-			}else{
-				inTrasition = false;
 			}
 		}
 	}
 }
 
 function makeAnimationToLeftOfForm(indexOfNext){
-	var pages = $(".contact-page .form-slider .form-slider-container .form-slider-page");
+	var pages = $(".form-slider .form-slider-container .form-slider-page");
 	var tl = new TimelineMax();
 	$(pages[indexOfNext]).css("display","block");
 	tl.to($(pages[indexOfNext]), 0, {x: 20},0)
@@ -67,7 +70,7 @@ function makeAnimationToLeftOfForm(indexOfNext){
 }
 
 function makeAnimationToRightOfForm(indexOfNext){
-	var pages = $(".contact-page .form-slider .form-slider-container .form-slider-page");
+	var pages = $(".form-slider .form-slider-container .form-slider-page");
 	var tl = new TimelineMax();
 	$(pages[indexOfNext]).css("display","block");
 	tl.to($(pages[indexOfNext]), 0, {x: -20},0)
