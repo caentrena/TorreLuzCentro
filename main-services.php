@@ -7,16 +7,14 @@
             <div class="card-container">
                 <div class="photo-container" style="background-image: url('assets/image/foto-slider1.jpg');">
                 </div>
-                <div class="title">Habitación Roquetas de Mar</div>
-                <div class="description"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</div>
+                <div class="title"><p>Instalaciones</p></div>
 
             </div>
 
             <div class="card-container">
                 <div class="photo-container" style="background-image: url('assets/image/foto-slider1.jpg');">
                 </div>
-                <div class="title">Habitación Roquetas de Mar</div>
-                <div class="description"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</div>
+                <div class="title"> <p>Actividades organizadas</p></div>
 
             </div>
 
