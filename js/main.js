@@ -11,17 +11,29 @@ $(document).ready(function(){
 function bindEvents(){
 	$(".form-slider .buttons .prev-button").click(changeFormPage);
 	$(".form-slider .buttons .next-button").click(changeFormPage);
+	$(".form-slider .form-slider-container .form-slider-page .row-form .input .icons-container svg").click(changeColor);
 }
 
 function initializePage(){
 
 	if($(".contact-page").index() != -1){
 		initializeForm($(".contact-page .form-slider"));
-	}else if($(".valuations-page").index() != -1){
-		initializeForm($(".valuations-page .form-slider"));
+	}else if($(".opinion-page").index() != -1){
+		initializeForm($(".opinion-page .form-slider"));
 	}
+}
 
-	
+function changeColor(){
+	var allIcons = $(this).closest(".icons-container").find("svg");
+	console.log(allIcons);
+	for (var i = 0; i < allIcons.length; i++) {
+		if($(this).index() == i){
+			$(allIcons[i]).css("fill","red");
+		}else{
+			$(allIcons[i]).css("fill","black");
+		}
+
+	}
 }
 
 function initializeForm(form){
