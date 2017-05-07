@@ -1,23 +1,28 @@
 <?php include 'header.php';?>
 
-    <section class="main-services-page page-content">
-        <div class="title-page"><p>Servicios</p></div>
+    <section class="facilities-page page-content">
+        <div class="title-page"><p>Instalaciones</p></div>
 
-        <div class="container small-width">
-            <div class="card-container">
-                <div class="photo-container" style="background-image: url('assets/image/foto-slider1.jpg');">
+        <div class="last-offers small-width">
+            <p class="title">Últimas ofertas</p>
+            <div class="offer-cards-container">
+                <div class="offer-card-container">
+                    <div class="photo-container" style="background-image: url('assets/image/foto-slider2.jpg');">
+                        <div class="discount"><p>-10%</p></div>
+                    </div>
+                    <div class="title">Escapada romántica</div>
+                    <div class="description">Muy lejos, más allá de las montañas de palabras, alejados de los países de las vocales y las consonantes, viven los textos simulados. Viven aislados en casas de letras, en la costa de la semántica, un gran océano de lenguas. Un riachuelo llamado Pons fluye por su pueblo y los abastece con las normas necesarias.</div>
+                    <div class="price-button"><p>Desde 30€</p></div>
                 </div>
-                <div class="title"><p>Instalaciones</p></div>
-
-            </div>
-
-            <div class="card-container">
-                <div class="photo-container" style="background-image: url('assets/image/foto-slider1.jpg');">
+                <div class="offer-card-container">
+                    <div class="photo-container" style="background-image: url('assets/image/foto-slider1.jpg');">
+                        <div class="discount"><p>-10%</p></div>
+                    </div>
+                    <div class="title">Día de la madre</div>
+                    <div class="description">Muy lejos, más allá de las montañas de palabras, alejados de los países de las vocales y las consonantes, viven los textos simulados. Viven aislados en casas de letras, en la costa de la semántica, un gran océano de lenguas. Un riachuelo llamado Pons fluye por su pueblo y los abastece con las normas necesarias.</div>
+                    <div class="price-button"><p>Desde 27€</p></div>
                 </div>
-                <div class="title"> <p>Actividades organizadas</p></div>
-
             </div>
-
         </div>
 
         <div class="separator small-width"></div>
