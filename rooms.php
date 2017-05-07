@@ -5,7 +5,7 @@
 
         <div class="rooms-cards-container small-width">
                 <div class="room-card-container">
-                    <div class="photo-container" style="background-image: url('assets/image/foto-slider1.jpg');">
+                    <div class="photo-container" style="background-image: url('assets/image/habitacion-roquetas-slider1.jpg');">
                     </div>
                     <div class="title">Habitación Roquetas de Mar</div>
                     <div class="description"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</div>
@@ -240,7 +240,7 @@
 
                 </div>
                 <div class="room-card-container">
-                    <div class="photo-container" style="background-image: url('assets/image/foto-slider1.jpg');"></div>
+                    <div class="photo-container" style="background-image: url('assets/image/habitacion-aguadulce-slider1.jpg');"></div>
                     <div class="title">Habitación Aguadulce</div>
                     <div class="description"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</div>
                     <div class="icon-line">

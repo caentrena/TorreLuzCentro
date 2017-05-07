@@ -9,7 +9,7 @@
         <div class="available-rooms small-width">
             <div class="rooms-cards-container">
                 <div class="room-card-container">
-                    <div class="photo-container" style="background-image: url('assets/image/foto-slider2.jpg');">
+                    <div class="photo-container" style="background-image: url('assets/image/habitacion-aguadulce-slider1.jpg');">
                         <div class="discount"><p>100€</p></div>
                     </div>
                     <div class="title"><p>Habitación Aguadulce</p></div>
@@ -21,7 +21,7 @@
 
                 </div>
                 <div class="room-card-container">
-                    <div class="photo-container" style="background-image: url('assets/image/foto-slider1.jpg');">
+                    <div class="photo-container" style="background-image: url('assets/image/habitacion-roquetas-slider1.jpg');">
                         <div class="discount"><p>50€</p></div>
                     </div>
                     <div class="title">Habitación Roquetas</div>
@@ -31,7 +31,7 @@
                         <div class="price-button blue-button"><p>Reserva</p></div>
                     </div>                </div>
                 <div class="room-card-container">
-                    <div class="photo-container" style="background-image: url('assets/image/foto-slider1.jpg');">
+                    <div class="photo-container" style="background-image: url('assets/image/habitacion-mojacar-slider1.jpg');">
                         <div class="discount"><p>75€</p></div>
                     </div>
                     <div class="title">Habitación Mojácar</div>

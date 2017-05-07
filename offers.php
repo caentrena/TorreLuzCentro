@@ -14,7 +14,7 @@
                     <div class="price-button"><p>Desde 30€</p></div>
                 </div>
                 <div class="offer-card-container">
-                    <div class="photo-container" style="background-image: url('assets/image/foto-slider1.jpg');">
+                    <div class="photo-container" style="background-image: url('assets/image/diadelamadre.jpg');">
                         <div class="discount"><p>-10%</p></div>
                     </div>
                     <div class="title">Día de la madre</div>
@@ -26,18 +26,19 @@
         <div class="last-offers small-width">
             <div class="offer-cards-container">
                 <div class="offer-card-container">
-                    <div class="photo-container" style="background-image: url('assets/image/foto-slider2.jpg');">
+                    <div class="photo-container" style="background-image: url('assets/image/navidad.jpg');">
                         <div class="discount"><p>-10%</p></div>
                     </div>
-                    <div class="title"><p>Escapada romántica</p></div>
+                    <div class="title"><p>Vacaciones de Navidad</p></div>
                     <div class="description"><p>Muy lejos, más allá de las montañas de palabras, alejados de los países de las vocales y las consonantes, viven los textos simulados. Viven aislados en casas de letras, en la costa de la semántica, un gran océano de lenguas. Un riachuelo llamado Pons fluye por su pueblo y los abastece con las normas necesarias.</p></div>
                     <div class="price-button"><p>Desde 30€</p></div>
                 </div>
                 <div class="offer-card-container">
-                    <div class="photo-container" style="background-image: url('assets/image/foto-slider1.jpg');">
+                    <div class="photo-container" style="background-image: url('assets/image/diadelpadre.jpg');">
+                    <div class="photo-container" style="background-image: url('assets/image/diadelpadre.jpg');">
                         <div class="discount"><p>-10%</p></div>
                     </div>
-                    <div class="title">Día de la madre</div>
+                    <div class="title">Día del padre</div>
                     <div class="description">Muy lejos, más allá de las montañas de palabras, alejados de los países de las vocales y las consonantes, viven los textos simulados. Viven aislados en casas de letras, en la costa de la semántica, un gran océano de lenguas. Un riachuelo llamado Pons fluye por su pueblo y los abastece con las normas necesarias.</div>
                     <div class="price-button"><p>Desde 27€</p></div>
                 </div>
