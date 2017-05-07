@@ -40,6 +40,9 @@
                 </div>
             </div>
         </div>
+        <a href="offers.php"><div class="go-to-valuations-button button">
+                <p>Ver todas las ofertas</p>
+        </div></a>
     </section>
 
 <?php include 'footer.php';?>

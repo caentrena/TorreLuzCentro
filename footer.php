@@ -2,7 +2,7 @@
 			<div class="footer-wrapper medium-width">
 				<div class="contact-container">
 					<p class="title no-select">CONTACTO</p>
-					<p class="address no-select">C/ Plaza Flores,8. España, Almeria</p>
+					<a href="https://www.google.es/maps/"><p class="address no-select">C/ Plaza Flores,8. España, Almeria</p></a>
 					<p class="telephone no-select">T. <span>+30 22340 323</span>/ <span>+30 32323 432</span></p>
 					<p class="email no-select">E. <span>info@kenshomykonos.com</span></p>
 				</div>

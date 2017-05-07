@@ -12,14 +12,49 @@ function bindEvents(){
 	$(".form-slider .buttons .prev-button").click(changeFormPage);
 	$(".form-slider .buttons .next-button").click(changeFormPage);
 	$(".form-slider .form-slider-container .form-slider-page .row-form .input .icons-container svg").click(changeColor);
+	$(".payment-page .form-slider .buttons .confirm-button").click(irAIndex);
 }
 
 function initializePage(){
+
+	if($(".page-content").hasClass("index-page")){
+		$("header .bread-crumb").css("display","none");
+	}else{
+		$("header .bread-crumb").css("display","block");
+	}
+
 	if($(".page-content").hasClass("aboutus-page")){
 		$("header .bread-crumb").find("p").append("Sobre nosotros");
 	}else if($(".page-content").hasClass("rooms-page")){
 		$("header .bread-crumb").find("p").append("Habitaciones");
-	}
+	}else if($(".page-content").hasClass("main-services-page")){
+		$("header .bread-crumb").find("p").append("Servicios");
+	}else if($(".page-content").hasClass("faq-page")){
+		$("header .bread-crumb").find("p").append("F.A.Q.");
+	}else if($(".page-content").hasClass("valuations-page")){
+		$("header .bread-crumb").find("p").append("Valoraciones");
+	}else if($(".page-content").hasClass("opinion-page")){
+		$("header .bread-crumb").find("p").append("<a href='valuations.php'>Valoraciones</a> > Mi Valoración");
+	}else if($(".page-content").hasClass("select-room-page")){
+		$("header .bread-crumb").find("p").append("Elegir habitación");
+	}else if($(".page-content").hasClass("facilities-page")){
+		$("header .bread-crumb").find("p").append("<a href='main-services.php'>Servicios</a> > Instalaciones");
+	}else if($(".page-content").hasClass("activities-page")){
+		$("header .bread-crumb").find("p").append("<a href='main-services.php'>Servicios</a> > Actividades");
+	}else if($(".page-content").hasClass("booking-page")){
+		$("header .bread-crumb").find("p").append("<a href='rooms.php'>Habitaciones</a> > Realizar reserva");
+	}else if($(".page-content").hasClass("payment-page")){
+		$("header .bread-crumb").find("p").append("<a href='rooms.php'>Habitaciones</a> > <a href='booking.php'>Realizar reserva</a> > Realizar pago");
+	}else if($(".page-content").hasClass("contact-page")){
+		$("header .bread-crumb").find("p").append("<a href='aboutus.php'>Sobre nosotros</a> > Envíanos un mensaje");
+	}else if($(".page-content").hasClass("offers-page")){
+		$("header .bread-crumb").find("p").append("Ofertas");
+	} else if($(".page-content").hasClass("single-room-page")){
+		$("header .bread-crumb").find("p").append("<a href='rooms.php'>Habitaciones</a> > Habitación");
+	} 
+
+
+
 	if($(".contact-page").index() != -1){
 		initializeForm($(".contact-page .form-slider"));
 	}else if($(".opinion-page").index() != -1){
@@ -61,6 +96,14 @@ function changeFormPage(){
 			$(".conditions-container").css("display","none");
 			makeAnimationToRightOfForm(currentFormPage - 1);
 		}else if($(this).hasClass("next-button")){
+			if(currentFormPage == amountsOfFormPages -1){
+				if($(".page-content").hasClass("booking-page")){
+					window.location.href = "payment.php";
+				}else if($(".page-content").hasClass("opinion-page")){
+					alert("¡Valoración enviada! Muchas gracias por su opinión");
+					window.location.href = "index.php";
+				}
+			}
 			enableButton(slider.find(".buttons .prev-button"));
 			//cambiar texto
 			if(currentFormPage >= amountsOfFormPages -2){
@@ -81,6 +124,11 @@ function changeFormPage(){
 			}
 		}
 	}
+}
+
+function irAIndex(){
+	alert("Pago realizado, disfrute de sus vacaciones.");
+	window.location.href = "index.php";
 }
 
 function makeAnimationToLeftOfForm(indexOfNext){

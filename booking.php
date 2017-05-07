@@ -2,7 +2,7 @@
 
     <section class="booking-page page-content">
 
-        <div class="title-page"><p>Realizar pago</p></div>
+        <div class="title-page"><p>Realizar reserva</p></div>
         <div class="room-recordation">  
             <div class="room-image" style="background-image: url('assets/image/foto-slider2.jpg');"></div>
             <div class="room-information">
