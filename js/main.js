@@ -33,12 +33,14 @@ function changeFormPage(){
 			if(currentFormPage == 1){
 				disableButton($(".contact-page .form-slider .buttons .prev-button"));
 			}
-			$(this).parent().find(".next-button").find("p").text("Siguiente")
+			$(this).parent().find(".next-button").find("p").text("Siguiente");
+			$(".conditions-container").css("display","none");
 			makeAnimationToRightOfForm(currentFormPage - 1);
 		}else if($(this).hasClass("next-button")){
 			enableButton($(".contact-page .form-slider .buttons .prev-button"));
 			//cambiar texto
 			if(currentFormPage >= amountsOfFormPages -2){
+				$(".conditions-container").css("display","block");
 				$(this).find("p").text("Enviar");
 			}
 			//deshabilitar el boton
