@@ -2,6 +2,9 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block; } body {line-height: 1; } ol, ul {list-style: none; } blockquote, q {quotes: none; } blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none; } table {border-collapse: collapse; border-spacing: 0; }
 
 /*  Elementos generales  */
+*:focus{
+	outline: none;
+}
 .no-select{
 	-webkit-touch-callout: none;
     -webkit-user-select: none; 
@@ -30,7 +33,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .page-content{
 	position: relative;
 	width: 100%;
-	min-height: 50vh;
+	min-height: 40vh;
 	margin: 5% 0;
 }
 .no-margin-top{
@@ -120,6 +123,153 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 			position: relative;
 			font-size: 3.5rem;
 			color: white;
+		}
+	}
+}
+
+.form-slider{
+	position: relative;
+	width: 60%;
+	margin: 0 auto;
+	.form-slider-container{
+		position: relative;
+		width: 100%;
+		height: 65px;
+		margin-bottom: 30px;
+		.form-slider-page{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			display: none;
+			opacity: 0;
+			.row-form{
+				position: relative;
+				width: 100%;
+				margin-bottom: 15px;
+				overflow: hidden;
+				.label{
+					position: relative;
+					width: 38%;
+					margin-right: 2%;
+					float: left;
+					p{
+						text-align: right;
+						font-size: 1.2rem;
+						color: #193145;
+					}
+				}
+				.input{
+					position: relative;
+					width: 60%;
+					float: left;
+					.icons-container{
+						position: relative;
+						svg{
+							position: relative;
+							width: 30px;
+							height: 30px;
+							margin-right: 10px;
+							cursor: pointer;
+						}
+						svg:last-child{
+							margin-right: 0px;
+						}
+						svg:hover{
+							fill: red;
+						}
+					}
+					select{
+						position: relative;
+						height: 25px;
+						border: 1px solid #193145;
+						border-radius: 20px;
+						padding: 0 10px;
+						cursor: pointer;
+					}
+					select:hover{
+						outline: none;
+					}
+					.input-text{
+						position: relative;
+						width: 100%;
+						height: 25px;
+						border: 1px solid #193145;
+						border-radius: 20px;
+						padding: 0 10px;
+					}
+					.input-text-area{
+						position: relative;
+						resize: none;
+						width: 100%;
+						height: 60px;
+						border: 1px solid #193145;
+						border-radius: 20px;
+						padding: 10px;
+					}
+				}
+			}
+			.row-form:last-child{
+				margin-bottom: 0px;
+			}
+		}
+	}
+	.conditions-container{
+		position: relative;
+		width: 100%;
+		margin-bottom: 30px;
+		display: none;
+		.condition-container{
+			position: relative;
+			width: 100%;
+			margin-bottom: 10px;
+			overflow: hidden;
+			input{
+				position: relative;
+				width: 5%;
+				height: 20px;
+				border: 1px solid red;
+				border-radius: 20px;
+				box-sizing: border-box;
+				float: left;
+			}
+			p{
+				position: relative;
+				width: 94%;
+				float: left;
+				color: #193145;
+			}
+		}
+	}
+	.buttons{
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		.prev-button{
+			position: relative;
+			border: 1px solid #193145;
+			border-radius: 20px;
+			box-sizing: border-box;
+			margin-right: 30px;
+			float: right;
+			display: none;
+			cursor: pointer;
+			p{
+				position: relative;
+				padding: 0 10px;
+			}
+		}
+		.next-button{
+			position: relative;
+			border: 1px solid #193145;
+			border-radius: 20px;
+			box-sizing: border-box;
+			float: right;
+			cursor: pointer;
+			p{
+				position: relative;
+				padding: 0 10px;
+			}
 		}
 	}
 }
@@ -284,6 +434,7 @@ header{
 					height: 100%;
 				}
 			}
+
 			.booking-button{
 				position: relative;
 				width: 80px;
@@ -604,127 +755,7 @@ header{
 
 /* Contacto */
 .contact-page{
-	.form-slider{
-		position: relative;
-		width: 60%;
-		margin: 0 auto;
-		.form-slider-container{
-			position: relative;
-			width: 100%;
-			height: 65px;
-			margin-bottom: 30px;
-			.form-slider-page{
-				position: absolute;
-				top: 0px;
-				left: 0px;
-				width: 100%;
-				display: none;
-				opacity: 0;
-				.row-form{
-					position: relative;
-					width: 100%;
-					margin-bottom: 15px;
-					overflow: hidden;
-					.label{
-						position: relative;
-						width: 38%;
-						margin-right: 2%;
-						float: left;
-
-						p{
-							text-align: right;
-							font-size: 1.2rem;
-							color: #193145;
-						}
-					}
-					.input{
-						position: relative;
-						width: 60%;
-						float: left;
-						.input-text{
-							position: relative;
-							width: 100%;
-							height: 25px;
-							border: 1px solid #193145;
-							border-radius: 20px;
-							padding: 0 10px;
-						}
-						.input-text-area{
-							position: relative;
-							resize: none;
-							width: 100%;
-							height: 60px;
-							border: 1px solid #193145;
-							border-radius: 20px;
-							padding: 10px;
-						}
-					}
-				}
-				.row-form:last-child{
-					margin-bottom: 0px;
-				}
-			}
-		}
-		.conditions-container{
-			position: relative;
-			width: 100%;
-			margin-bottom: 30px;
-			display: none;
-			.condition-container{
-				position: relative;
-				width: 100%;
-				margin-bottom: 10px;
-				overflow: hidden;
-				input{
-					position: relative;
-					width: 5%;
-					height: 20px;
-					border: 1px solid red;
-					border-radius: 20px;
-					box-sizing: border-box;
-					float: left;
-				}
-				p{
-					position: relative;
-					width: 94%;
-					float: left;
-					color: #193145;
-				}
-			}
-		}
-		.buttons{
-			position: relative;
-			width: 100%;
-			overflow: hidden;
-			.prev-button{
-				position: relative;
-				border: 1px solid #193145;
-				border-radius: 20px;
-				box-sizing: border-box;
-				margin-right: 30px;
-				float: right;
-				display: none;
-				cursor: pointer;
-				p{
-					position: relative;
-					padding: 0 10px;
-				}
-			}
-			.next-button{
-				position: relative;
-				border: 1px solid #193145;
-				border-radius: 20px;
-				box-sizing: border-box;
-				float: right;
-				cursor: pointer;
-				p{
-					position: relative;
-					padding: 0 10px;
-				}
-			}
-		}
-
-	}
+	
 }
 
 /* Services page */
@@ -871,9 +902,6 @@ header{
 			color: #193145;
 		}
 	}
-
-
-
 }
 
 .activities-page{
@@ -1265,7 +1293,7 @@ header{
 }
 
 .valuations-page{
-
+	
 }
 
 .select-room-page{

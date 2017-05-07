@@ -2,7 +2,7 @@
 
     <section class="contact-page page-content">
         <div class="title-page"><p>Contacto</p></div>
-        <div class="form-slider small-width">
+        <div class="form-slider">
             <div class="form-slider-container">
                 <div class="form-slider-page">
                     <div class="row-form">
