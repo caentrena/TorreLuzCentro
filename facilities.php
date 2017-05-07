@@ -8,8 +8,8 @@
 
                 <div class="service-slider slider">
                     <div class="slider-container">
-                        <div class="slide" style="background-image: url('assets/image/habitacion-roquetas-slider1.jpg');"></div>
-                        <div class="slide active" style="background-image: url('assets/image/habitacion-roquetas-slider2.jpg');"></div>
+                        <div class="slide" style="background-image: url('assets/image/piscina1.jpg');"></div>
+                        <div class="slide active" style="background-image: url('assets/image/piscina2.jpg');"></div>
                     </div>
                     <div class="slider-controller">
                         <div class="prev-button">
@@ -21,7 +21,7 @@
                     </div>
                 </div>
 
-                <div class="title"> <p> Servicio</p></div>
+                <div class="title"> <p> Piscina</p></div>
                 <div class="description"> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p></div>
 
 
@@ -34,8 +34,8 @@
 
                 <div class="service-slider slider">
                     <div class="slider-container">
-                        <div class="slide" style="background-image: url('assets/image/habitacion-roquetas-slider1.jpg');"></div>
-                        <div class="slide active" style="background-image: url('assets/image/habitacion-roquetas-slider2.jpg');"></div>
+                        <div class="slide" style="background-image: url('assets/image/restaurante1.jpg');"></div>
+                        <div class="slide active" style="background-image: url('assets/image/restaurante2.jpg');"></div>
                     </div>
                     <div class="slider-controller">
                         <div class="prev-button">
@@ -47,7 +47,7 @@
                     </div>
                 </div>
 
-                <div class="title"> Servicio</div>
+                <div class="title"> Restaurante</div>
                 <div class="description"> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p></div>
 
 
@@ -60,8 +60,8 @@
 
                 <div class="service-slider slider">
                     <div class="slider-container">
-                        <div class="slide" style="background-image: url('assets/image/habitacion-roquetas-slider1.jpg');"></div>
-                        <div class="slide active" style="background-image: url('assets/image/habitacion-roquetas-slider2.jpg');"></div>
+                        <div class="slide" style="background-image: url('assets/image/lavanderia1.jpg');"></div>
+                        <div class="slide active" style="background-image: url('assets/image/lavanderia2.jpg');"></div>
                     </div>
                     <div class="slider-controller">
                         <div class="prev-button">
@@ -73,7 +73,7 @@
                     </div>
                 </div>
 
-                <div class="title"> Servicio</div>
+                <div class="title"> Lavandería</div>
                 <div class="description"> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p></div>
 
 
@@ -86,8 +86,8 @@
 
                 <div class="service-slider slider">
                     <div class="slider-container">
-                        <div class="slide" style="background-image: url('assets/image/habitacion-roquetas-slider1.jpg');"></div>
-                        <div class="slide active" style="background-image: url('assets/image/habitacion-roquetas-slider2.jpg');"></div>
+                        <div class="slide" style="background-image: url('assets/image/masajes1.jpg');"></div>
+                        <div class="slide active" style="background-image: url('assets/image/masajes2.jpg');"></div>
                     </div>
                     <div class="slider-controller">
                         <div class="prev-button">
@@ -99,7 +99,7 @@
                     </div>
                 </div>
 
-                <div class="title"> Servicio</div>
+                <div class="title"> Masajes</div>
                 <div class="description"> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p></div>
 
 

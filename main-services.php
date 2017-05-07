@@ -5,16 +5,16 @@
 
         <div class="container small-width">
             <div class="card-container">
-                <div class="photo-container" style="background-image: url('assets/image/foto-slider1.jpg');">
+                <div class="photo-container" style="background-image: url('assets/image/instalaciones.jpg');">
                 </div>
-                <div class="title"><p>Instalaciones</p></div>
+                <a href="facilities.php"><div class="title button"><p>Instalaciones</p></div></a>
 
             </div>
 
             <div class="card-container">
-                <div class="photo-container" style="background-image: url('assets/image/foto-slider1.jpg');">
+                <div class="photo-container" style="background-image: url('assets/image/activities.jpg');">
                 </div>
-                <div class="title"> <p>Actividades organizadas</p></div>
+                <a href="activities.php"><div class="title button"> <p>Actividades organizadas</p></div></a>
 
             </div>
 

@@ -5,12 +5,12 @@
 
         <div class="rooms-cards-container small-width">
                 <div class="room-card-container">
-                    <div class="photo-container" style="background-image: url('assets/image/foto-slider1.jpg');">
+                    <div class="photo-container" style="background-image: url('assets/image/habitacion-roquetas-slider1.jpg');">
                     </div>
                     <div class="title">Habitación Roquetas de Mar</div>
                     <div class="description"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</div>
                     <div class="icon-line">
-                        <div class="valuations-button button"><p>Ver valoraciones</p></div>
+                        <a href="valuations.php"><div class="valuations-button button"><p>Ver valoraciones</p></div></a>
                         <div class="icon">
                             <div class="tag-icon"></div>
                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -232,19 +232,19 @@
                         </div>
                     </div>
                     <div class="icon-line">
-                        <div class="info-button button"><p>Saber más</p></div>
-                        <div class="booking-button button"><p>Reservar</p></div>
+                        <a href="single-room.php"><div class="info-button button"><p>Saber más</p></div></a>
+                        <a href="booking.php"><div class="booking-button button"><p>Reservar</p></div></a>
                     </div>
 
 
 
                 </div>
                 <div class="room-card-container">
-                    <div class="photo-container" style="background-image: url('assets/image/foto-slider1.jpg');"></div>
+                    <div class="photo-container" style="background-image: url('assets/image/habitacion-aguadulce-slider1.jpg');"></div>
                     <div class="title">Habitación Aguadulce</div>
                     <div class="description"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</div>
                     <div class="icon-line">
-                        <div class="valuations-button button"><p>Ver valoraciones</p></div>
+                        <a href="valuations.php"><div class="valuations-button button"><p>Ver valoraciones</p></div></a>
                         <div class="icon">
                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                  viewBox="0 0 567.419 567.419" style="enable-background:new 0 0 567.419 567.419;" xml:space="preserve">
@@ -462,15 +462,15 @@
                         </div>
                     </div>
                     <div class="icon-line">
-                        <div class="info-button button"><p>Saber más</p></div>
-                        <div class="booking-button button"><p>Reservar</p></div>
+                        <a href="single-room.php"><div class="info-button button"><p>Saber más</p></div></a>
+                        <a href="booking.php"><div class="booking-button button"><p>Reservar</p></div></a>
                     </div>
                 </div>
         </div>
 
         <div class="separator small-width"></div>
 
-        <div class="go-to-valuations-button button">
+        <a href="valuations.php"><div class="go-to-valuations-button button">
 
                 <div class="icon">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -583,7 +583,7 @@
                 <p>Ver valoraciones</p>
 
 
-        </div>
+        </div></a>
 
     </section>
 

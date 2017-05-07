@@ -17,8 +17,16 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     src: url('../assets/fonts/PalanquinDark-Bold.ttf') format('truetype'),
 }
 
+@font-face {
+	font-family: 'ropa-sans';
+	src: url('../assets/fonts/RopaSans-Regular.ttf') format('truetype'),
+}
+
 @dosis-light: 'Dosis-Light';
 @palaquin-bold: 'palaquin-bold';
+@ropa-sans: 'ropa-sans';
+
+
 
 
 /*  Elementos generales  */
@@ -38,6 +46,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	background-color: #193145;
 	p{
 		color: white !important;
+	}
+}
+
+a{
+	position: relative;
+	text-decoration: none;
+	.button{
+		
 	}
 }
 
@@ -350,14 +366,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	p.subtitle{
 		text-align: center;
 		font-size: 2rem;
-		font-family: @palaquin-bold;
+		font-family: @ropa-sans;
 		line-height: 2.5rem;
 		color: #193145;
 	}
 	p{
 		text-align: center;
 		font-size: 2.5rem;
-		font-family: @palaquin-bold;
+		font-family: @ropa-sans;
 		line-height: 3rem;
 		color: @azuloscuro; 
 	}
@@ -472,7 +488,7 @@ header{
 				position: relative;
 				margin-right: 20px;
 				font-size: 1rem;
-				font-family: @palaquin-bold;
+				font-family: @ropa-sans;
 				color: @azulmedio;
 				top: 50%;
 				-webkit-transform: translateY(-50%);
@@ -552,7 +568,7 @@ header{
 					-o-transform: translateY(-50%) translateX(-50%);
 					transform: translateY(-50%) translateX(-50%);
 					font-size: 1rem;
-					font-family: @palaquin-bold;
+					font-family: @ropa-sans;
 					color: @azulmedio;
 				}
 			}
@@ -571,7 +587,7 @@ header{
 			p{
 				color: @azuloscuro;
 				font-size: 0.8rem;
-				font-family: @palaquin-bold;
+				font-family: @ropa-sans;
 			}
 		}
 	}
@@ -591,7 +607,7 @@ header{
 		.title{
 			position: relative;
 			font-size: 2rem;
-			font-family: @palaquin-bold;
+			font-family: @ropa-sans;
 			color: @azuloscuro;
 			margin-bottom: 30px;
 		}
@@ -635,7 +651,7 @@ header{
 				.title{
 					position: relative;
 					font-size: 1.5rem;
-					font-family: @palaquin-bold;
+					font-family: @ropa-sans;
 					color: @azuloscuro;
 					margin: 15px 0;
 					padding-right: 5%;
@@ -687,7 +703,7 @@ header{
 			position: relative;
 			margin-bottom: 30px;
 			font-size: 2rem;
-			font-family: @palaquin-bold;
+			font-family: @ropa-sans;
 			color: @azuloscuro;
 		}
 		.description{
@@ -708,7 +724,7 @@ header{
 			position: relative;
 			margin-bottom: 30px;
 			font-size: 2rem;
-			font-family: @palaquin-bold;
+			font-family: @ropa-sans;
 			color: @azuloscuro;
 			text-align: center;
 		}
@@ -892,7 +908,7 @@ header{
 				position: relative;
 				margin-bottom: 30px;
 				font-size: 2rem;
-				font-family: @palaquin-bold;
+				font-family: @ropa-sans;
 				color: @azuloscuro;
 			}
 
@@ -962,7 +978,7 @@ header{
 				position: relative;
 				margin-bottom: 30px;
 				font-size: 2rem;
-				font-family: @palaquin-bold;
+				font-family: @ropa-sans;
 				color: @azuloscuro;
 			}
 			.description{
@@ -1157,7 +1173,7 @@ header{
 		.title{
 			position: relative;
 			font-size: 2rem;
-			font-family: @palaquin-bold;
+			font-family: @ropa-sans;
 			color: #193145;
 			margin-bottom: 30px;
 		}
@@ -1202,7 +1218,7 @@ header{
 					text-align: center;
 					position: relative;
 					font-size: 1.5rem;
-					font-family: @palaquin-bold;
+					font-family: @ropa-sans;
 					color: #193145;
 					margin: 15px 0;
 					padding-right: 5%;
@@ -1301,7 +1317,7 @@ header{
 				position: relative;
 				float: left;
 				font-size: 1.5rem;
-				font-family: @palaquin-bold;
+				font-family: @ropa-sans;
 				color: @azuloscuro;
 				margin-bottom: 10px;
 
@@ -1649,7 +1665,7 @@ header{
 		.title{
 			position: relative;
 			font-size: 2rem;
-			font-family: @palaquin-bold;
+			font-family: @ropa-sans;
 			color: #193145;
 			margin-bottom: 30px;
 		}
@@ -1673,11 +1689,12 @@ header{
 						position: absolute;
 						top: 0px;
 						right: 0px;
-						width: 40px;
+						width: 200px;
 						height: 20;
 						background-color: rgba(255,255,255,0.5);
 						padding: 5px;
 						p{
+							font-family: @dosis-light;
 							position: absolute;
 							top: 50%;
 							left: 50%;
@@ -1694,7 +1711,7 @@ header{
 					text-align: center;
 					position: relative;
 					font-size: 1.5rem;
-					font-family: @palaquin-bold;
+					font-family: @ropa-sans;
 					color: #193145;
 					margin: 15px 0;
 					padding-right: 5%;
@@ -1760,7 +1777,7 @@ footer{
 				position: relative;
 				text-transform: uppercase;
 				font-size: 1.1rem;
-				font-family: @palaquin-bold;
+				font-family: @ropa-sans;
 				margin-bottom: 15px;
 				color: @azuloscuro;
 			}
@@ -1792,7 +1809,7 @@ footer{
 				position: relative;
 				text-transform: uppercase;
 				font-size: 1.1rem;
-				font-family: @palaquin-bold;
+				font-family: @ropa-sans;
 				color: @azuloscuro;
 				margin-bottom: 15px;
 			}
