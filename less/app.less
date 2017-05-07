@@ -10,10 +10,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 /*fuentes*/
 @font-face {
-    font-family: 'Dosis-Bold';
-    src: url('../assets/fonts/Dosis-Bold.ttf') format('truetype'),
-}
-@font-face {
     font-family: 'Dosis-Light';
     src: url('../assets/fonts/Dosis-Light.ttf') format('truetype'),
 }
@@ -21,14 +17,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-family: 'palaquin-bold';
     src: url('../assets/fonts/PalanquinDark-Bold.ttf') format('truetype'),
 }
-@font-face {
-    font-family: 'palaquin-regular';
-    src: url('../assets/fonts/PalanquinDark-Regular.ttf') format('truetype'),
-}
-@dosis-bold: 'Dosis-Bold';
+
 @dosis-light: 'Dosis-Light';
 @palaquin-bold: 'palaquin-bold';
-@palaquin-regular: 'palaquin-regular';
+
 
 /*  Elementos generales  */
 *:focus{
@@ -161,6 +153,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	position: relative;
 	width: 60%;
 	margin: 0 auto;
+	.bigger-height{
+		height: 200px !important;
+	}
 	.form-slider-container{
 		position: relative;
 		width: 100%;
@@ -272,6 +267,19 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 			}
 		}
 	}
+	.precio{
+		position: relative;
+		float: right;
+		margin: 20px 0;
+		font-size: 1.4rem;
+		line-height: 1.9rem;
+		color: @azuloscuro;
+		.smaller{
+			font-size: 1.2rem;
+			line-height: 1.7rem;
+			color: @azulflojo;
+		}
+	}
 	.buttons{
 		position: relative;
 		width: 100%;
@@ -283,6 +291,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 			box-sizing: border-box;
 			margin-right: 30px;
 			float: right;
+			padding: 5px;
 			display: none;
 			cursor: pointer;
 			p{
@@ -296,6 +305,34 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 			border-radius: 20px;
 			box-sizing: border-box;
 			float: right;
+			cursor: pointer;
+			padding: 5px;
+			p{
+				position: relative;
+				padding: 0 10px;
+			}
+		}
+		.cancel-button{
+			position: relative;
+			border: 1px solid @azuloscuro;
+			border-radius: 20px;
+			box-sizing: border-box;
+			margin-right: 30px;
+			padding: 5px;
+			float: right;
+			cursor: pointer;
+			p{
+				position: relative;
+				padding: 0 10px;
+			}
+		}
+		.confirm-button{
+			position: relative;
+			border: 1px solid @azuloscuro;
+			border-radius: 20px;
+			box-sizing: border-box;
+			float: right;
+			padding: 5px;
 			cursor: pointer;
 			p{
 				position: relative;
@@ -970,7 +1007,37 @@ header{
 }
 
 .payment-page{
-
+	.room-recordation{
+		position: relative;
+		margin: 0 auto;
+		width: 50%; 
+		overflow: hidden;
+		margin-bottom: 40px;
+		.room-image{
+			position: relative;
+			float: left;
+			width: 40%;
+			height: 150px;
+			margin-right: 5%;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		.room-information{
+			position: relative;
+			float: left;
+			width: 55%;
+			p{
+				font-size: 1.4rem;
+				margin-bottom: 10px;
+				color: @azulflojo;
+				.smaller{
+					font-size: 1.2rem;
+					color: @azuloscuro;
+				}
+			}
+		}
+	}
 }
 
 .offers-page{

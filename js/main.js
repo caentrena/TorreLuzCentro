@@ -19,6 +19,8 @@ function initializePage(){
 		initializeForm($(".contact-page .form-slider"));
 	}else if($(".opinion-page").index() != -1){
 		initializeForm($(".opinion-page .form-slider"));
+	}else if($(".payment-page").index() != -1){
+		initializeForm($(".payment-page .form-slider"));
 	}
 }
 
@@ -40,12 +42,11 @@ function initializeForm(form){
 }
 
 function changeFormPage(){
-		console.log("entre");
-	if(!inTransition){
+	console.log(!$(".page-content").hasClass(".payment-page"));
+	if(!inTransition && !$(".page-content").hasClass(".payment-page")){
 		inTransition = true;
 		var slider = $(this).closest(".form-slider");
 		if($(this).hasClass("prev-button")){
-			console.log("para atras");
 			if(currentFormPage == 1){
 				disableButton(slider.find(".buttons .prev-button"));
 			}
@@ -53,7 +54,6 @@ function changeFormPage(){
 			$(".conditions-container").css("display","none");
 			makeAnimationToRightOfForm(currentFormPage - 1);
 		}else if($(this).hasClass("next-button")){
-			console.log("para alante");
 			enableButton(slider.find(".buttons .prev-button"));
 			//cambiar texto
 			if(currentFormPage >= amountsOfFormPages -2){
