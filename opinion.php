@@ -20,10 +20,10 @@
                         <div class="label required"><p>¿Qué quieres valorar? *</p></div>
                         <div class="input">
                             <select>
-                              <option value="select" disabled>Seleccione una opción</option>
-                              <option value="volvo">Hotel</option>
-                              <option value="saab">Habitación Roquetas de mar</option>
-                              <option value="opel">Habitación Aguadulce</option>
+                              <option value="select" disabled selected>Seleccione una opción</option>
+                              <option value="hotel">Hotel</option>
+                              <option value="hab_roq">Habitación Roquetas de mar</option>
+                              <option value="hab_agua">Habitación Aguadulce</option>
                             </select>
                         </div>
                     </div>
